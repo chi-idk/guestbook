@@ -2,8 +2,8 @@
 // 1. SUPABASE CONFIGURATION & INITIALIZATION
 // ==========================================
 // Replace these with your actual Supabase project URL and Anon Public Key
-const SUPABASE_URL = 'https://YOUR_SUPABASE_PROJECT.supabase.co';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://lnlqeuyffhupmvoydffi.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_yeFWfwEXU7Q1ZTlkmnpMdw_Sgotta0J';
 
 // Initialize Supabase client (assuming the Supabase CDN script is included in your HTML or loaded dynamically)
 // <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
