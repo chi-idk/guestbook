@@ -1,0 +1,112 @@
+:root {
+  --gb-bg: #ffffff;
+  --gb-text: #333333;
+  --gb-primary: #5c6ac4;
+  --gb-primary-hover: #404fbe;
+  --gb-border: #e1e4e8;
+  --gb-input-bg: #f9f9f9;
+  --gb-font: inherit;
+}
+
+body {
+  font-family: var(--gb-font);
+  background: transparent;
+  color: var(--gb-text);
+  margin: 0;
+  padding: 10px;
+}
+
+.guestbook-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: var(--gb-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--gb-input-bg);
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid var(--gb-border);
+}
+
+/* Flexbox layout for name, email, website */
+.guestbook-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.guestbook-field {
+  flex: 1;
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guestbook-field.full-width {
+  flex: 100%;
+}
+
+.guestbook-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.guestbook-field input,
+.guestbook-form textarea {
+  padding: 8px 10px;
+  border: 1px solid var(--gb-border);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.guestbook-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.guestbook-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.admin-toggle-link {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.guestbook-submit-btn {
+  background: var(--gb-primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.guestbook-submit-btn:hover {
+  background: var(--gb-primary-hover);
+}
+
+.guestbook-messages {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
